@@ -1,0 +1,101 @@
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  width: 15%;
+  min-width: 284.44px;
+  height: 100%;
+  /* float: left; */
+  background-color: rgb(38, 43, 49);
+}
+
+.logo{
+  width: 90px;
+  margin: 2rem;
+}
+
+#menu ul {
+  width: 100%;
+  padding-left: 0;
+}
+#menu ul li {
+  text-align: left;
+  list-style: none;
+}
+
+
+#menu a {
+  color: #cedae0;
+  font-weight:normal;
+  font-size:large;
+  text-decoration: none;
+  padding: 8px 0px 8px 20px;
+  display: block;
+  position: relative;
+}
+
+#explorar, #ofertas {
+  font-size:15px !important;
+  padding-left: 40px !important;
+}
+
+#menu a:hover {
+  background: rgb(49, 68, 68);
+  color: whitesmoke;
+}
+
+#menu a:active:after {
+  content: "";
+  height: 100%;
+  width: 4px;
+  background: #f56c2d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.ativo{
+  content: "";
+  height: 100%;
+  width: 4px;
+  background: #f56c2d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#categoriasList {
+  float:right;
+  position: relative;
+  left: 7.5vw;
+  bottom:3.3vh;
+  z-index: 999;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 50% !important;
+}
+#categoriasList li {
+  display: none;
+  
+}
+#categoriasList li a {
+  font-size:15px !important;
+  color:rgb(38, 43, 49)
+}
+
+.categorias:hover #categoriasList li  {
+  display: block;
+}
+
+#categoriasList li a:hover {
+  background-color: rgb(224, 230, 235) ;
+  color:rgb(38, 43, 49);
+  border-radius: 5px;
+
+}
+
+

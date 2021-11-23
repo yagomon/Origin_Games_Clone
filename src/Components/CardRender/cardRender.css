@@ -1,0 +1,14 @@
+.cardRender-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 0 0;
+}
+
+.cardRender-cards {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
