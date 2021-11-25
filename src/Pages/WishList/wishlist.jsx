@@ -1,11 +1,14 @@
 import "./wishlist.css"
-import  CardRenderAll  from "../../Components/CardRenders/cardRenderAll"
 import ContainerBodyPage from "../../Components/ContainerBodyPage/containerBodyPage"
+import CardContainer from "../../Components/CardContainer/cardContainer"
+import Card from "../../Components/Card/card"
 
 export default function WishList(){
   return(
     <ContainerBodyPage>
-      <CardRenderAll title='Minha Lista de Desejos'/>
+      <CardContainer title='Minha Lista de Desejos'>
+        <Card/>
+      </CardContainer>
       
     </ContainerBodyPage>
   )

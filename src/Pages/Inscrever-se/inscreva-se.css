@@ -44,7 +44,7 @@
 .inputActive{
   border-bottom: solid 2px;
   border-color: orangered;
-  padding:0;
+  padding:0.5rem;
 }
 
 .button-cadastrar{

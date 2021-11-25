@@ -6,6 +6,9 @@
   background-color:rgba(38, 43, 49, 0.911);
   padding: 1.8rem 0rem 2rem;
   color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .social a {

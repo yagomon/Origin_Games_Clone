@@ -2,7 +2,10 @@
   margin: 0 0.8rem 1rem;
   position: unset;
   max-width: 233px;
-  max-height: 332.38px !important;
+  height: 320.38px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-item {

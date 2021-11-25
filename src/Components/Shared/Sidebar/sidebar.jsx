@@ -37,7 +37,7 @@ export default function Sidebar() {
         </li>
         <li className="perfil">
           <Link onClick={handleClick} name="Perfil"
-            className={`item ${activeLink === "Perfil" ? "linkAtivo":"" }` } id="perfil"  to="a">
+            className={`item ${activeLink === "Perfil" ? "linkAtivo":"" }` } id="perfil"  to="/profile">
             Meu Perfil
           </Link>
         </li>

@@ -1,11 +1,11 @@
-.cardRender-title {
+.cardContainer-title {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 0 0 0;
 }
 
-.cardRender-cards {
+.cardContainer-cards {
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;

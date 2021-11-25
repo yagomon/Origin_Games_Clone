@@ -1,52 +1,74 @@
 import "./inscreva-se.css";
-import NavEntrar from "../../Components/NavBar-Entrar/navEntrar";
 import { useState } from "react";
+import axios from "axios";
+import NavEntrar from "../../Components/NavBar-Entrar/navEntrar";
 import ContainerBodyPage from "../../Components/ContainerBodyPage/containerBodyPage";
 
 
 export default function Inscrever(){
 
   const [Active, setActive] = useState("");
-
   const handleClick= (e)=>{
     setActive(e.target.name)
   }
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [nickname, setNickname] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordConfirmation, setPasswordConfirmation] = useState('');
+
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    const user = {
+      name,
+      email,
+      nickname,
+      password,
+      passwordConfirmation
+    }
+
+    axios.post('user/register', user)
+    .then(response => console.log(response))
+  }
+
 
   return(
     <ContainerBodyPage id="cadastro">
       <div className="card-cadastrar">
         <NavEntrar/>
 
-        <form className="form-cadastro">
+        <form className="form-cadastro" onSubmit={handleSubmit}>
           
           <div className="nome" >
             <p id="titulo-cadastrar" >Nome:</p>
-            <input onClick={handleClick} name="e-mail" className="input-cadastro" type="text" placeholder="Insira seu nome" />
+            <input type="text" required onChange={event => setName(event.target.value)} onClick={handleClick} name="nome" className={`input-cadastro ${Active === "nome" ? "inputActive":"" }`}  placeholder="Insira seu nome" />
           </div>
 
           <div className="email" >
             <p id="titulo-cadastrar" >Email:</p>
-            <input onClick={handleClick} name="e-mail" className="input-cadastro" type="text" placeholder="Insira seu melhor e-mail!" />
+            <input type="email" required onChange={event => setEmail(event.target.value)}  onClick={handleClick} name="e-mail" className={`input-cadastro ${Active === "e-mail" ? "inputActive":"" }`}  placeholder="Insira seu melhor e-mail!" />
           </div>
 
           <div className="apelido" >
             <p id="titulo-cadastrar" >Apelido:</p>
-            <input onClick={handleClick} name="e-mail" className="input-cadastro" type="text" placeholder="Como te chamamos?" />
+            <input type="text" required onChange={event => setNickname(event.target.value)} onClick={handleClick} name="apelido" className={`input-cadastro ${Active === "apelido" ? "inputActive":"" }`} placeholder="Como te chamamos?" />
           </div>
 
           <div className="senha" >
             <p id="titulo-cadastrar" >Senha:</p>
-            <input onClick={handleClick} name="e-mail" className="input-cadastro" type="text" placeholder="Digite uma senha" />
+            <input type='password' required onChange={event => setPassword(event.target.value)} onClick={handleClick} name="senha" className={`input-cadastro ${Active === "senha" ? "inputActive":"" }`} placeholder="Digite uma senha" />
           </div>
 
           <div className="senha" >
             <p id="titulo-cadastrar" >Confirmar Senha:</p>
-            <input onClick={handleClick} name="e-mail" className="input-cadastro" type="text" placeholder="Digite a senha novamente" />
+            <input type="password" required onChange={event => setPasswordConfirmation(event.target.value)} onClick={handleClick} name="confirma" className={`input-cadastro ${Active === "confirma" ? "inputActive":"" }`} placeholder="Digite a senha novamente" />
           </div>
 
           
 
-          <button className="button-cadastrar" type="submit">Inscreva-se</button>
+          <button className="button-cadastrar" type="submit" value='Continuar'>Inscreva-se</button>
 
         </form>
         
@@ -56,9 +78,3 @@ export default function Inscrever(){
     </ContainerBodyPage>
   )
 }
-
-// "name": "",
-// "email": "",
-// "nickname": "",
-// "password": "",
-// "passwordConfirmation":
