@@ -1,6 +1,8 @@
 .card {
   margin: 0 0.8rem 1rem;
   position: unset;
+  max-width: 233px;
+  max-height: 332.38px !important;
 }
 
 .card-item {
@@ -10,15 +12,17 @@
 }
 
 .card-image img {
-  width: 231px;
-  height: 326px;
+  width: 100%;
+  height: 200px;
+
 }
 
 .card-title {
-  padding: 0.8rem;
+  padding: 0.8rem 0rem 0rem 0.8rem;
   font-size: medium;
   font-weight: lighter;
   color: gray;
+  margin-bottom: 0px;
 }
 
 .card-price {
@@ -28,13 +32,35 @@
   color: orangered;
 }
 
-.wishlist {
-  color: #e60013;
+.card-botton {
+  color: 
+  #f56c2d;
   font-size: 1.4em;
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.wishlist{
+  margin-right:1rem;
+}
+
+.wished{
+  margin-right:1rem;
+  display:none;
+}
+.wishFalse{
+  display: none !important;
+}
+  
 .wishlist:hover {
   cursor: pointer;
 }
+
+.wish{
+  color:
+  #f56c2d;
+  display: block;
+}
+

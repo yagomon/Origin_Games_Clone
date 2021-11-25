@@ -1,0 +1,95 @@
+.body {
+  padding-left: 284.44px;
+}
+
+#cadastro{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-cadastrar{
+  width: 30rem;
+  height: 40rem;
+  border: solid 1px;
+  position: relative;
+}
+#titulo-cadastrar{
+  padding: 1rem 1rem 0rem 0rem;
+  color: gray;
+  font-size: medium;
+  margin: 0;
+}
+
+.form-cadastro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-cadastrar{
+  width: 400px;
+  display: flex;
+  height: 45px;
+  border: solid 1px;
+  border-color: gray;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.input-cadastro{
+  border: solid 1px;
+  color: gray;
+  padding: 0.5rem;
+  width: 400px;
+}
+
+.inputActive{
+  border-bottom: solid 2px;
+  border-color: orangered;
+  padding:0;
+}
+
+.button-cadastrar{
+  color: #fff;
+  background: #f56c2d;
+  border: 1px solid #f56c2d;
+  width: 100%;
+  max-width: 250px;
+  padding: 12px 0;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 4px;
+  margin-top: 3rem;
+}
+.button-cadastrar:hover{
+  background: rgb(223, 93, 33);
+  border: 1px solidrgb(223, 93, 33);
+}
+.button-cadastrar:active{
+  margin-top:3.2rem ;
+}
+
+#loja {
+  padding-left: 284.44px;
+}
+.ea-origin{
+  background: lightgray;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #787d85;
+  margin: 0;
+  align-items: center;
+}
+.img-ea-origin{
+  width: 85px;
+  margin: 1rem 1.5rem 0.8rem 0.8rem;
+}

@@ -1,10 +1,16 @@
+import axios from "axios";
 const Api = {
-  url: 'https://www.mmobomb.com/api1/games',
-  fetchGetAll: () =>  fetch(`${Api.url}/games`),
-  fetchGetById: (id) => fetch(`${Api.url}/game?id=${id}`)  
-}
+  fetchGetAll: async (setState) => {
+        try {
+          const response = await axios.get("https://nintendo-shop.herokuapp.com/game/findMany");
+          setState([...response.data])
+        } catch(err){
+          console.error(err)
+        }
+    }
 
-// https://www.mmobomb.com/api?ref=devresourc.es
-
+  }
 
 export default Api;
+
+// API DA PROF --> https://nintendo-shop.herokuapp.com/game

@@ -1,0 +1,17 @@
+.container-nav-entrar{
+  border-bottom: solid 1px;
+  padding: 1rem;
+}
+
+#conectar, #criar-conta{
+  text-decoration: none;
+  color: gray;
+  padding-right: 0.8rem;
+  font-size: small;
+}
+
+.isActive{
+  border-bottom: solid 3px;
+  border-color:orangered;
+  padding-bottom: 1rem;
+}
