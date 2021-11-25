@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:rgba(38, 43, 49, 0.911);
+  padding: 1.8rem 0rem 2rem;
+  color: #fff;
+}
+
+.social a {
+  font-size: 3.5em;
+  color: #fff;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+.social-item{
+  margin: 0rem 0.3rem;
+}
+
+.social-item:hover {
+  color:#f56c2d;
+  transform: scale(1.3);
+
+}

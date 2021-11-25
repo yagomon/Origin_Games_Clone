@@ -7,19 +7,19 @@ import { gamesChumbado } from '../../Api/chumbado';
 
 
 export default function CardRenderAll(props) {
-  const games= gamesChumbado
+  // const games= gamesChumbado
 
-  // const [games, setGames] = useState([]);
+  const [games, setGames] = useState([]);
 
-  // useEffect(()=>{ 
-  //   Api.fetchGetAll(setGames)
-  // }, []);
+  useEffect(()=>{ 
+    Api.fetchGetAll(setGames)
+  }, []);
   
-  // console.log(games)
+  console.log(games)
 
   return (
     <div className='cardRender-div'>
-      <h2 className='cardRender-title'>{props.title}</h2>
+      <h2 className='cardRender-title'>{props.name}</h2>
       <div className='cardRender-cards'>
         {
           games.map((game, index)=>(

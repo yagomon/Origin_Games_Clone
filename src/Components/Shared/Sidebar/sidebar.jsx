@@ -7,13 +7,15 @@ import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   
-  const [activeLink, setActiveLink]= useState("")
+  const [activeLink, setActiveLink]= useState("Loja")
 
   const handleClick= (e) => {
     setActiveLink(e.target.name)
   }
   
   
+// Abrir em nova janela de tamanho especifico-->  onclick="window.open(this.href,'galeria','width=680,height=470'); return false;" title="Galeria de fotos" id="galeria"></a>
+
   return (
     <div id="menu">
       <img className="logo" src={logo} alt="Logotipo origin" />
@@ -22,10 +24,10 @@ export default function Sidebar() {
 
       <ul>
         <li >
-          <Link to="s" onClick={handleClick} name="EA Play"
+          <a href='https://www.origin.com/bra/pt-br/store/ea-play' target="blank" onClick={handleClick} name="EA Play"
             className={`item ${activeLink === "EA Play" ? "linkAtivo":"" }` } >
             EA Play
-          </Link>
+          </a>
         </li>
         <li>
           <Link onClick={handleClick} name="Loja"
@@ -33,26 +35,11 @@ export default function Sidebar() {
             Loja
           </Link>
         </li>
-        <li className="categorias">
-          <Link onClick={handleClick} name="Explorar"
-            className={`item ${activeLink === "Explorar" ? "linkAtivo":"" }` } id="explorar"  to="a">
-            Explorar jogos
+        <li className="perfil">
+          <Link onClick={handleClick} name="Perfil"
+            className={`item ${activeLink === "Perfil" ? "linkAtivo":"" }` } id="perfil"  to="a">
+            Meu Perfil
           </Link>
-
-          <ul id="categoriasList">
-            <li>
-              <Link className="subcategoria" to="a">Ação</Link>
-            </li>
-            <li>
-              <Link className="subcategoria" to="a">Aventura</Link>
-            </li>
-            <li>
-              <Link className="subcategoria" to="a">MMO</Link>
-            </li>
-            <li>
-              <Link className="subcategoria" to="a">Esportes</Link>
-            </li>
-          </ul>
         </li>
 
         <li>

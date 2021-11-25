@@ -36,7 +36,7 @@
   position: relative;
 }
 
-#explorar, #desejos {
+#perfil, #desejos {
   font-size:15px !important;
   padding-left: 40px !important;
 }
@@ -56,39 +56,6 @@
   left: 0;
   top: 0;
   bottom: 0;
-}
-
-#categoriasList {
-  float:right;
-  position: relative;
-  left: 7.5vw;
-  bottom:3.3vh;
-  z-index: 999;
-  background-color: whitesmoke;
-  border-radius: 5px;
-  width: 50% !important;
-}
-#categoriasList li {
-  display: none;
-  
-}
-#categoriasList li .subcategoria {
-  text-decoration: none;
-  font-size:15px !important;
-  color:rgb(38, 43, 49);
-  font-weight:normal;
-  padding: 8px 0px 8px 20px;
-  display: block;
-}
-
-.categorias:hover #categoriasList li  {
-  display: block;
-}
-
-#categoriasList li .subcategoria:hover {
-  background-color: rgb(224, 230, 235) ;
-  color:rgb(38, 43, 49);
-  border-radius: 5px;
 }
 
 .buttons{

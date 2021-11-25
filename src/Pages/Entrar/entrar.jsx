@@ -3,6 +3,7 @@ import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import NavEntrar from "../../Components/NavBar-Entrar/navEntrar";
 import { useState } from "react";
+import ContainerBodyPage from "../../Components/ContainerBodyPage/containerBodyPage";
 
 
 export default function Entrar(){
@@ -14,7 +15,7 @@ export default function Entrar(){
   }
 
   return(
-    <div id="login" className="body">
+    <ContainerBodyPage id="login">
       <div className="card-entrar">
         <NavEntrar/>
         <h3 id="titulo-conectar" >Conecte-se com sua conta EA</h3>
@@ -34,6 +35,6 @@ export default function Entrar(){
         </form>
         <p className="ea-origin"><img className="img-ea-origin" src="https://signin.ea.com/p/statics/originX/img/EA_Origin_Lockup_Black.png" alt="EA / Origin" />  O Origin é parte da EA Network.</p>
       </div>
-    </div>
+    </ContainerBodyPage>
   )
 }

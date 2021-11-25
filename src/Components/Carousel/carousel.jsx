@@ -1,15 +1,12 @@
 import { Carousel } from 'react-bootstrap';
-import sims from './sims.jpg';
-import hot from './hot.jpg';
-import experimente from './experimente.jpg';
 
-export default function Carrossel(){
+export default function Carrossel(props){
   return(
     <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={sims}
+          src= {props.img1}
           alt="First slide"
         />
       </Carousel.Item>
@@ -17,7 +14,7 @@ export default function Carrossel(){
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={hot}
+          src={props.img2}
           alt="Second slide"
         />
       </Carousel.Item>
@@ -25,7 +22,7 @@ export default function Carrossel(){
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={experimente}
+          src={props.img3}
           alt="Third slide"
         />
         </Carousel.Item>

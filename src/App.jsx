@@ -4,7 +4,7 @@ import Sidebar from './Components/Shared/Sidebar/sidebar.jsx';
 import Loja from './Pages/Loja/loja';
 import Entrar from './Pages/Entrar/entrar';
 import Inscrever from './Pages/Inscrever-se/inscreva-se';
-import WishList from './Pages/WishList/whishlist';
+import WishList from './Pages/WishList/wishlist';
 
 
 

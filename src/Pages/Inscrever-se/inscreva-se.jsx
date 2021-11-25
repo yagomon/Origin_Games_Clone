@@ -1,6 +1,7 @@
 import "./inscreva-se.css";
 import NavEntrar from "../../Components/NavBar-Entrar/navEntrar";
 import { useState } from "react";
+import ContainerBodyPage from "../../Components/ContainerBodyPage/containerBodyPage";
 
 
 export default function Inscrever(){
@@ -12,7 +13,7 @@ export default function Inscrever(){
   }
 
   return(
-    <div id="cadastro" className="body">
+    <ContainerBodyPage id="cadastro">
       <div className="card-cadastrar">
         <NavEntrar/>
 
@@ -38,6 +39,11 @@ export default function Inscrever(){
             <input onClick={handleClick} name="e-mail" className="input-cadastro" type="text" placeholder="Digite uma senha" />
           </div>
 
+          <div className="senha" >
+            <p id="titulo-cadastrar" >Confirmar Senha:</p>
+            <input onClick={handleClick} name="e-mail" className="input-cadastro" type="text" placeholder="Digite a senha novamente" />
+          </div>
+
           
 
           <button className="button-cadastrar" type="submit">Inscreva-se</button>
@@ -47,7 +53,7 @@ export default function Inscrever(){
         <p className="ea-origin"><img className="img-ea-origin" src="https://signin.ea.com/p/statics/originX/img/EA_Origin_Lockup_Black.png" alt="EA / Origin" />  O Origin é parte da EA Network.</p>
 
       </div>
-    </div>
+    </ContainerBodyPage>
   )
 }
 
