@@ -75,7 +75,7 @@ export default function Inscrever(){
 
           
 
-          <button onClick={goToLoginPage} className="button-cadastrar" type="submit" value='Continuar'>Inscreva-se</button>
+          <button onClick="goToLoginPage" className="button-cadastrar" type="submit" value='Continuar'>Inscreva-se</button>
 
         </form>
         

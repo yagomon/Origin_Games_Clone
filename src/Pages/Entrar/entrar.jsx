@@ -58,7 +58,7 @@ export default function Entrar(){
             <input type="password" onChange={event => setPassword(event.target.value)} onClick={handleClick} name="senha" className="input-login" placeholder="Senha" />
           </div>
 
-          <button onClick={goToProfilelPage} className="button-login" type="submit">Conectar</button>
+          <button onClick="goToProfilelPage" className="button-login" type="submit">Conectar</button>
         </form>
         <p className="ea-origin"><img className="img-ea-origin" src="https://signin.ea.com/p/statics/originX/img/EA_Origin_Lockup_Black.png" alt="EA / Origin" />  O Origin é parte da EA Network.</p>
       </div>
