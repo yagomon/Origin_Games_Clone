@@ -14,3 +14,10 @@
   width: 8rem;
   border-radius: 5rem;
 }
+
+.txt{
+  display: flex;
+  justify-content: center;
+  height: 70.3vh;
+  align-items: center;
+}

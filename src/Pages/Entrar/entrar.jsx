@@ -1,6 +1,7 @@
 import "./entrar.css";
 import axios from 'axios';
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import NavEntrar from "../../Components/NavBar-Entrar/navEntrar";
@@ -33,6 +34,11 @@ export default function Entrar(){
     })
   }
 
+  const navigate = useNavigate();
+  const goToProfilelPage = () => {
+    navigate('/profile')
+  }
+
   return(
     <ContainerBodyPage id="login">
       <div className="card-entrar">
@@ -52,7 +58,7 @@ export default function Entrar(){
             <input type="password" onChange={event => setPassword(event.target.value)} onClick={handleClick} name="senha" className="input-login" placeholder="Senha" />
           </div>
 
-          <button className="button-login" type="submit">Conectar</button>
+          <button onClick={goToProfilelPage} className="button-login" type="submit">Conectar</button>
         </form>
         <p className="ea-origin"><img className="img-ea-origin" src="https://signin.ea.com/p/statics/originX/img/EA_Origin_Lockup_Black.png" alt="EA / Origin" />  O Origin é parte da EA Network.</p>
       </div>

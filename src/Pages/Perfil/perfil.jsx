@@ -42,7 +42,7 @@ const Perfil = () => {
             <span>Membro desde: {user.createdAt}</span>
           </>
         ) : (
-          <h2>Sem dados do perfil, faça login</h2>
+          <h2>Você não está logado!</h2>
         )
       }
     </div>

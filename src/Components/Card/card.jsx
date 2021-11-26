@@ -8,10 +8,6 @@ import axios from 'axios';
 const Card = (props) => {
 
   const [wish, setWish]= useState(false);
-  const handleWish = ()=>{
-    setWish(!wish)
-  }
-
 
   const navigate = useNavigate();
 
@@ -29,16 +25,21 @@ const Card = (props) => {
     axios.get(`/game/wish/${id}`, config)
   }
 
+  const handleWish = ()=>{
+    setWish(!wish);
+    wishGame()
+  }
+
   return (
     <div className='card'>
-      <a className='card-item' href='/'>
-        <div className='card-image'>
+      
+        <div className='card-image' onClick={goToGamePage}>
           <img src={props.image} alt={props.title}></img>
         </div>
         <h2 className='card-title'>{props.title}</h2>
         
         
-      </a>
+      
 
       <div className='card-botton'>
         <span className='card-price'>{`R$ ${props.preco}`}</span>

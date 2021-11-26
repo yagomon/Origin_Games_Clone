@@ -4,7 +4,6 @@ import ContainerBodyPage from '../ContainerBodyPage/containerBodyPage';
 
 const Footer = () => {
   return (
-    <ContainerBodyPage>
       <div className='footer'>
         <div className='social'>
           <a href='https://www.facebook.com/OriginInsider' target="blank"><FaFacebookSquare className='social-item'/></a>
@@ -16,7 +15,6 @@ const Footer = () => {
         <span>EA Swiss Sàrl | A sede está localizada em Place du Molard, Genebra (Suíça)</span>
         <span>Registry (Genebra) sob o número: CH-660-2328005-8.</span>
       </div>
-      </ContainerBodyPage>  
   )
 }
 

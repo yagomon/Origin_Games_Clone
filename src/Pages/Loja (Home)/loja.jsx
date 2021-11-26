@@ -16,13 +16,13 @@ export default function Loja(){
 
   const getData = async () => {
     try{
-      const response = await axios.get('/game/findMany')
-      setGames(response.data)
+      const response = await axios.get('/game/findMany');
+      if(mounted) { setGames(response.data) }
     } catch(err){
       console.log(err)
     }
   }
-console.log(games)
+
   useEffect(() => {
     setMounted(true)
     getData()

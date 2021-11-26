@@ -6,7 +6,7 @@ const ContainerBodyPage = (props) => {
   return (
     <div className='body' id={props.id}>
       {props.children}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   )
 }

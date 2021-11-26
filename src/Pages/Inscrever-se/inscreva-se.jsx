@@ -1,5 +1,6 @@
 import "./inscreva-se.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import NavEntrar from "../../Components/NavBar-Entrar/navEntrar";
 import ContainerBodyPage from "../../Components/ContainerBodyPage/containerBodyPage";
@@ -31,6 +32,12 @@ export default function Inscrever(){
 
     axios.post('user/register', user)
     .then(response => console.log(response))
+  }
+
+  const navigate = useNavigate();
+
+  const goToLoginPage = () => {
+    navigate('/login')
   }
 
 
@@ -68,7 +75,7 @@ export default function Inscrever(){
 
           
 
-          <button className="button-cadastrar" type="submit" value='Continuar'>Inscreva-se</button>
+          <button onClick={goToLoginPage} className="button-cadastrar" type="submit" value='Continuar'>Inscreva-se</button>
 
         </form>
         

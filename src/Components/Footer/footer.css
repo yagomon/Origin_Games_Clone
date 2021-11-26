@@ -4,15 +4,16 @@
   justify-content: center;
   flex-direction: column;
   background-color:rgba(38, 43, 49, 0.911);
-  padding: 1.8rem 0rem 2rem;
+  padding: 1vw 0vw 3vw;;
   color: #fff;
-  position: absolute;
+  margin: 5rem 0rem 0rem; 
   bottom: 0;
   width: 100%;
+  padding-left: 284.44px;
 }
 
 .social a {
-  font-size: 3.5em;
+  font-size: 3.5rem;
   color: #fff;
   text-decoration: none;
   transition: all .2s ease-in-out;
